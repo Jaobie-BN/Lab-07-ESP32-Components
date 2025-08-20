@@ -300,8 +300,22 @@ project(lab7-1)
 
 ## สรุปคำสั่งที่ใช้ และผลลัพธ์ที่ได้
 
-<เขียนตอบในนี้>
+เข้าไปในโฟลเดอร์โปรเจกต์ Lab 7-1
+cd lab7-1_Managed_Local_Component
 
+โหลด environment ของ ESP-IDF
+. $IDF_PATH/export.sh
+
+ตั้งค่า target ให้เป็น ESP32
+idf.py set-target esp32
+
+สั่ง build โปรเจกต์
+idf.py build
+
+sim ดูผลลัพธ์
+idf.py qemu
+
+![alt text](image.png)
 ```
 
 ## โจทย์ท้าทาย
